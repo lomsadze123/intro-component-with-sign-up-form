@@ -20,16 +20,35 @@
         <div class="box">
         <button class="btn"><span class="btnspan">Try it free 7 days</span> then $20/mo. thereafter</button>
             <div class="form">
-                <form>
-                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
-                    <input type="text" name="email" id="email" placeholder="Email Address" required>
-                    <input type="text" name="password" id="password" placeholder="Password" required>
+                <form id="form">
+                    <div class="input">
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" >
+                        <img src="images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="p">First Name cannot be empty</p>
+
+                    <div class="input">
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name" >
+                        <img src="images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="p">Last Name cannot be empty</p>
+                    <div class="input">
+                        <input type="text" name="email" id="email" placeholder="Email Address" >
+                        <img src="images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="p">Looks like this is not an email</p>
+                    <div class="input">
+                        <input type="password" name="password" id="password" placeholder="Password" >
+                        <img src="images/icon-error.svg" alt="error">
+                    </div>
+                    <p class="p">Password cannot be empty </p>
                     <input type="submit" value="CLAIM YOUR FREE TRIAL">
                 </form>
                 <a href="#">By clicking the button, you are agreeing to our <span class="aspan"> Terms and Services</span></a>
             </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
